@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Container from './Container';
-import Form from './Form';
-import List from './ContactsList';
+import Container from './Container/index';
+import Form from './Form/index';
+import List from './ContactList';
 import Filter from './Filter';
 import styled from 'styled-components';
 
@@ -57,4 +57,4 @@ class App extends Component {
 
 export default App;
 
-const Title = styled.h1``;
+// const Title = styled.h1``;
