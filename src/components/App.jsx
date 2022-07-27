@@ -1,5 +1,5 @@
 import { Component } from 'react';
-
+import { nanoid } from 'nanoid';
 import Phonebook from './Phonebook/Phonebook';
 import Contacts from './Phonebook/Contacts/Contacts';
 import Filter from './Phonebook/Filter/Filter';
@@ -23,7 +23,7 @@ export class App extends Component {
       return alert(`${name} is already in contacts`);
     }
     const contact = {
-      
+      id: nanoid(),
       name: name,
       number: number,
     };

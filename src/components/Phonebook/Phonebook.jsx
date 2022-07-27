@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import s from './Phonebook.module.css';
 class Phonebook extends Component {
@@ -59,3 +60,12 @@ class Phonebook extends Component {
 }
 
 export default Phonebook;
+
+
+Component.propTypes = {
+   stats: PropTypes.shape({
+    name: PropTypes.number.isRequired,
+    number: PropTypes.number.isRequired,
+    
+  }),
+};
